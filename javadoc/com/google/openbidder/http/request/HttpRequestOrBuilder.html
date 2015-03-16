@@ -2,7 +2,7 @@
 <!-- NewPage -->
 <html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>HttpRequestOrBuilder (Google Open Bidder)</title>
 <link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
 </head>
@@ -134,6 +134,10 @@ extends <a href="../../../../../com/google/openbidder/http/message/HttpMessageOr
 <td class="colLast"><code><strong><a href="../../../../../com/google/openbidder/http/request/HttpRequestOrBuilder.html#getProtocol()">getProtocol</a></strong>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/net/InetSocketAddress.html?is-external=true" title="class or interface in java.net">InetSocketAddress</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/google/openbidder/http/request/HttpRequestOrBuilder.html#getRemoteAddress()">getRemoteAddress</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/net/URI.html?is-external=true" title="class or interface in java.net">URI</a></code></td>
 <td class="colLast"><code><strong><a href="../../../../../com/google/openbidder/http/request/HttpRequestOrBuilder.html#getUri()">getUri</a></strong>()</code>&nbsp;</td>
 </tr>
@@ -192,13 +196,23 @@ extends <a href="../../../../../com/google/openbidder/http/message/HttpMessageOr
 <a name="getUri()">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getUri</h4>
 <pre><a href="http://docs.oracle.com/javase/7/docs/api/java/net/URI.html?is-external=true" title="class or interface in java.net">URI</a>&nbsp;getUri()</pre>
 <dl><dt><span class="strong">Returns:</span></dt><dd>The full request URI</dd>
 <dt><span class="strong">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - If the URI cannot be constructed / would be invalid</dd></dl>
+</li>
+</ul>
+<a name="getRemoteAddress()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getRemoteAddress</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/net/InetSocketAddress.html?is-external=true" title="class or interface in java.net">InetSocketAddress</a>&nbsp;getRemoteAddress()</pre>
+<dl><dt><span class="strong">Returns:</span></dt><dd>The remote address (this may be the last proxy's address).</dd></dl>
 </li>
 </ul>
 </li>
@@ -268,6 +282,6 @@ extends <a href="../../../../../com/google/openbidder/http/message/HttpMessageOr
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2014 <a href="http://www.google.com">Google, Inc.</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2015 <a href="http://www.google.com">Google, Inc.</a>. All rights reserved.</small></p>
 </body>
 </html>

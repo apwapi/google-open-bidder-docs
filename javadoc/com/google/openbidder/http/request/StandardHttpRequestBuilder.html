@@ -2,7 +2,7 @@
 <!-- NewPage -->
 <html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>StandardHttpRequestBuilder (Google Open Bidder)</title>
 <link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
 </head>
@@ -141,9 +141,10 @@ extends <a href="../../../../../com/google/openbidder/http/request/AbstractHttpR
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected </code></td>
-<td class="colLast"><code><strong><a href="../../../../../com/google/openbidder/http/request/StandardHttpRequestBuilder.html#StandardHttpRequestBuilder(com.google.openbidder.http.Protocol,%20java.lang.String,%20java.net.URI,%20com.google.common.collect.Multimap,%20com.google.common.collect.Multimap,%20com.google.common.collect.Multimap)">StandardHttpRequestBuilder</a></strong>(<a href="../../../../../com/google/openbidder/http/Protocol.html" title="class in com.google.openbidder.http">Protocol</a>&nbsp;protocol,
+<td class="colLast"><code><strong><a href="../../../../../com/google/openbidder/http/request/StandardHttpRequestBuilder.html#StandardHttpRequestBuilder(com.google.openbidder.http.Protocol,%20java.lang.String,%20java.net.URI,%20java.net.InetSocketAddress,%20com.google.common.collect.Multimap,%20com.google.common.collect.Multimap,%20com.google.common.collect.Multimap)">StandardHttpRequestBuilder</a></strong>(<a href="../../../../../com/google/openbidder/http/Protocol.html" title="class in com.google.openbidder.http">Protocol</a>&nbsp;protocol,
                           <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;method,
                           <a href="http://docs.oracle.com/javase/7/docs/api/java/net/URI.html?is-external=true" title="class or interface in java.net">URI</a>&nbsp;uri,
+                          <a href="http://docs.oracle.com/javase/7/docs/api/java/net/InetSocketAddress.html?is-external=true" title="class or interface in java.net">InetSocketAddress</a>&nbsp;remoteAddress,
                           com.google.common.collect.Multimap&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;headers,
                           com.google.common.collect.Multimap&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;parameters,
                           com.google.common.collect.Multimap&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../../com/google/openbidder/http/Cookie.html" title="interface in com.google.openbidder.http">Cookie</a>&gt;&nbsp;cookies)</code>&nbsp;</td>
@@ -207,33 +208,41 @@ extends <a href="../../../../../com/google/openbidder/http/request/AbstractHttpR
 <td class="colLast"><code><strong><a href="../../../../../com/google/openbidder/http/request/StandardHttpRequestBuilder.html#getProtocol()">getProtocol</a></strong>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/net/InetSocketAddress.html?is-external=true" title="class or interface in java.net">InetSocketAddress</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/google/openbidder/http/request/StandardHttpRequestBuilder.html#getRemoteAddress()">getRemoteAddress</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/net/URI.html?is-external=true" title="class or interface in java.net">URI</a></code></td>
 <td class="colLast"><code><strong><a href="../../../../../com/google/openbidder/http/request/StandardHttpRequestBuilder.html#getUri()">getUri</a></strong>()</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected com.google.common.collect.Multimap&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
 <td class="colLast"><code><strong><a href="../../../../../com/google/openbidder/http/request/StandardHttpRequestBuilder.html#headers()">headers</a></strong>()</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../com/google/openbidder/http/request/StandardHttpRequestBuilder.html" title="class in com.google.openbidder.http.request">StandardHttpRequestBuilder</a></code></td>
 <td class="colLast"><code><strong><a href="../../../../../com/google/openbidder/http/request/StandardHttpRequestBuilder.html#removeCookie(java.lang.String)">removeCookie</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../com/google/openbidder/http/request/StandardHttpRequestBuilder.html" title="class in com.google.openbidder.http.request">StandardHttpRequestBuilder</a></code></td>
 <td class="colLast"><code><strong><a href="../../../../../com/google/openbidder/http/request/StandardHttpRequestBuilder.html#removeParameter(java.lang.String)">removeParameter</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../com/google/openbidder/http/request/StandardHttpRequestBuilder.html" title="class in com.google.openbidder.http.request">StandardHttpRequestBuilder</a></code></td>
 <td class="colLast"><code><strong><a href="../../../../../com/google/openbidder/http/request/StandardHttpRequestBuilder.html#removeParameter(java.lang.String,%20java.lang.String)">removeParameter</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
                <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../com/google/openbidder/http/request/StandardHttpRequestBuilder.html" title="class in com.google.openbidder.http.request">StandardHttpRequestBuilder</a></code></td>
 <td class="colLast"><code><strong><a href="../../../../../com/google/openbidder/http/request/StandardHttpRequestBuilder.html#setMethod(java.lang.String)">setMethod</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;method)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../com/google/openbidder/http/request/StandardHttpRequestBuilder.html" title="class in com.google.openbidder.http.request">StandardHttpRequestBuilder</a></code></td>
 <td class="colLast"><code><strong><a href="../../../../../com/google/openbidder/http/request/StandardHttpRequestBuilder.html#setProtocol(com.google.openbidder.http.Protocol)">setProtocol</a></strong>(<a href="../../../../../com/google/openbidder/http/Protocol.html" title="class in com.google.openbidder.http">Protocol</a>&nbsp;protocol)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../com/google/openbidder/http/request/StandardHttpRequestBuilder.html" title="class in com.google.openbidder.http.request">StandardHttpRequestBuilder</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/google/openbidder/http/request/StandardHttpRequestBuilder.html#setRemoteAddress(java.net.InetSocketAddress)">setRemoteAddress</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/net/InetSocketAddress.html?is-external=true" title="class or interface in java.net">InetSocketAddress</a>&nbsp;remoteAddress)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../com/google/openbidder/http/request/StandardHttpRequestBuilder.html" title="class in com.google.openbidder.http.request">StandardHttpRequestBuilder</a></code></td>
@@ -305,7 +314,7 @@ extends <a href="../../../../../com/google/openbidder/http/request/AbstractHttpR
 <pre>protected&nbsp;StandardHttpRequestBuilder()</pre>
 </li>
 </ul>
-<a name="StandardHttpRequestBuilder(com.google.openbidder.http.Protocol, java.lang.String, java.net.URI, com.google.common.collect.Multimap, com.google.common.collect.Multimap, com.google.common.collect.Multimap)">
+<a name="StandardHttpRequestBuilder(com.google.openbidder.http.Protocol, java.lang.String, java.net.URI, java.net.InetSocketAddress, com.google.common.collect.Multimap, com.google.common.collect.Multimap, com.google.common.collect.Multimap)">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -314,6 +323,7 @@ extends <a href="../../../../../com/google/openbidder/http/request/AbstractHttpR
 <pre>protected&nbsp;StandardHttpRequestBuilder(<a href="../../../../../com/google/openbidder/http/Protocol.html" title="class in com.google.openbidder.http">Protocol</a>&nbsp;protocol,
                           <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;method,
                           <a href="http://docs.oracle.com/javase/7/docs/api/java/net/URI.html?is-external=true" title="class or interface in java.net">URI</a>&nbsp;uri,
+                          <a href="http://docs.oracle.com/javase/7/docs/api/java/net/InetSocketAddress.html?is-external=true" title="class or interface in java.net">InetSocketAddress</a>&nbsp;remoteAddress,
                           com.google.common.collect.Multimap&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;headers,
                           com.google.common.collect.Multimap&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;parameters,
                           com.google.common.collect.Multimap&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../../com/google/openbidder/http/Cookie.html" title="interface in com.google.openbidder.http">Cookie</a>&gt;&nbsp;cookies)</pre>
@@ -462,6 +472,25 @@ extends <a href="../../../../../com/google/openbidder/http/request/AbstractHttpR
 <pre>public final&nbsp;<a href="../../../../../com/google/openbidder/http/request/StandardHttpRequestBuilder.html" title="class in com.google.openbidder.http.request">StandardHttpRequestBuilder</a>&nbsp;setUri(<a href="http://docs.oracle.com/javase/7/docs/api/java/net/URI.html?is-external=true" title="class or interface in java.net">URI</a>&nbsp;uri)</pre>
 </li>
 </ul>
+<a name="getRemoteAddress()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getRemoteAddress</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/net/InetSocketAddress.html?is-external=true" title="class or interface in java.net">InetSocketAddress</a>&nbsp;getRemoteAddress()</pre>
+<dl><dt><span class="strong">Returns:</span></dt><dd>The remote address (this may be the last proxy's address).</dd></dl>
+</li>
+</ul>
+<a name="setRemoteAddress(java.net.InetSocketAddress)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setRemoteAddress</h4>
+<pre>public&nbsp;<a href="../../../../../com/google/openbidder/http/request/StandardHttpRequestBuilder.html" title="class in com.google.openbidder.http.request">StandardHttpRequestBuilder</a>&nbsp;setRemoteAddress(<a href="http://docs.oracle.com/javase/7/docs/api/java/net/InetSocketAddress.html?is-external=true" title="class or interface in java.net">InetSocketAddress</a>&nbsp;remoteAddress)</pre>
+</li>
+</ul>
 <a name="getParameters()">
 <!--   -->
 </a>
@@ -572,6 +601,6 @@ extends <a href="../../../../../com/google/openbidder/http/request/AbstractHttpR
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2014 <a href="http://www.google.com">Google, Inc.</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2015 <a href="http://www.google.com">Google, Inc.</a>. All rights reserved.</small></p>
 </body>
 </html>

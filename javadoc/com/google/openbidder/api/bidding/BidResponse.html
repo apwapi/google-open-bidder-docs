@@ -2,7 +2,7 @@
 <!-- NewPage -->
 <html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>BidResponse (Google Open Bidder)</title>
 <link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
 </head>
@@ -129,6 +129,12 @@ extends <a href="../../../../../com/google/openbidder/api/interceptor/UserRespon
 <div class="block">Builder for <a href="../../../../../com/google/openbidder/api/bidding/BidResponse.html" title="class in com.google.openbidder.api.bidding"><code>BidResponse</code></a>.</div>
 </td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/google/openbidder/api/bidding/BidResponse.ResponseMode.html" title="enum in com.google.openbidder.api.bidding">BidResponse.ResponseMode</a></strong></code>
+<div class="block">The bid response builder will be in either "native mode" or "openrtb mode", mutually exclusive.</div>
+</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -236,56 +242,63 @@ extends <a href="../../../../../com/google/openbidder/api/interceptor/UserRespon
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><strong><a href="../../../../../com/google/openbidder/api/bidding/BidResponse.html#filterBids(com.google.common.base.Predicate)">filterBids</a></strong>(com.google.common.base.Predicate&lt;com.google.openrtb.OpenRtb.BidResponse.SeatBid.Bid&gt;&nbsp;filter)</code>
+<td class="colLast"><code><strong><a href="../../../../../com/google/openbidder/api/bidding/BidResponse.html#filterBids(com.google.common.base.Predicate)">filterBids</a></strong>(com.google.common.base.Predicate&lt;com.google.openrtb.OpenRtb.BidResponse.SeatBid.Bid.Builder&gt;&nbsp;filter)</code>
 <div class="block">Filters bids, from all seats.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><strong><a href="../../../../../com/google/openbidder/api/bidding/BidResponse.html#filterBids(java.lang.String,%20com.google.common.base.Predicate)">filterBids</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;seat,
-          com.google.common.base.Predicate&lt;com.google.openrtb.OpenRtb.BidResponse.SeatBid.Bid&gt;&nbsp;filter)</code>
+          com.google.common.base.Predicate&lt;com.google.openrtb.OpenRtb.BidResponse.SeatBid.Bid.Builder&gt;&nbsp;filter)</code>
 <div class="block">Filter bids from a given seat.</div>
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../com/google/openbidder/api/bidding/BidResponse.ResponseMode.html" title="enum in com.google.openbidder.api.bidding">BidResponse.ResponseMode</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/google/openbidder/api/bidding/BidResponse.html#getResponseMode()">getResponseMode</a></strong>()</code>
+<div class="block">Returns the <a href="../../../../../com/google/openbidder/api/bidding/BidResponse.ResponseMode.html" title="enum in com.google.openbidder.api.bidding"><code>BidResponse.ResponseMode</code></a>, which tells you which of <a href="../../../../../com/google/openbidder/api/bidding/BidResponse.html#openRtb()"><code>openRtb()</code></a> or
+ <a href="../../../../../com/google/openbidder/api/bidding/BidResponse.html#nativeResponse()"><code>nativeResponse()</code></a> can be invoked safely.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><strong><a href="../../../../../com/google/openbidder/api/bidding/BidResponse.html#hashCode()">hashCode</a></strong>()</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>&lt;T&gt;&nbsp;T</code></td>
 <td class="colLast"><code><strong><a href="../../../../../com/google/openbidder/api/bidding/BidResponse.html#nativeResponse()">nativeResponse</a></strong>()</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../com/google/openbidder/api/bidding/BidResponse.Builder.html" title="class in com.google.openbidder.api.bidding">BidResponse.Builder</a></code></td>
 <td class="colLast"><code><strong><a href="../../../../../com/google/openbidder/api/bidding/BidResponse.html#newBuilder()">newBuilder</a></strong>()</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>com.google.openrtb.OpenRtb.BidResponse.Builder</code></td>
 <td class="colLast"><code><strong><a href="../../../../../com/google/openbidder/api/bidding/BidResponse.html#openRtb()">openRtb</a></strong>()</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>com.google.openrtb.OpenRtb.BidResponse.SeatBid.Builder</code></td>
 <td class="colLast"><code><strong><a href="../../../../../com/google/openbidder/api/bidding/BidResponse.html#seatBid()">seatBid</a></strong>()</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>com.google.openrtb.OpenRtb.BidResponse.SeatBid.Builder</code></td>
 <td class="colLast"><code><strong><a href="../../../../../com/google/openbidder/api/bidding/BidResponse.html#seatBid(java.lang.String)">seatBid</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;seat)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../com/google/openbidder/api/bidding/BidResponse.Builder.html" title="class in com.google.openbidder.api.bidding">BidResponse.Builder</a></code></td>
 <td class="colLast"><code><strong><a href="../../../../../com/google/openbidder/api/bidding/BidResponse.html#toBuilder()">toBuilder</a></strong>()</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>com.google.common.base.MoreObjects.ToStringHelper</code></td>
 <td class="colLast"><code><strong><a href="../../../../../com/google/openbidder/api/bidding/BidResponse.html#toStringHelper()">toStringHelper</a></strong>()</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><strong><a href="../../../../../com/google/openbidder/api/bidding/BidResponse.html#updateBids(com.google.common.base.Function)">updateBids</a></strong>(com.google.common.base.Function&lt;com.google.openrtb.OpenRtb.BidResponse.SeatBid.Bid.Builder,<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&gt;&nbsp;updater)</code>
 <div class="block">Updates bids, from all seats.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><strong><a href="../../../../../com/google/openbidder/api/bidding/BidResponse.html#updateBids(java.lang.String,%20com.google.common.base.Function)">updateBids</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;seat,
           com.google.common.base.Function&lt;com.google.openrtb.OpenRtb.BidResponse.SeatBid.Bid.Builder,<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&gt;&nbsp;updater)</code>
@@ -369,7 +382,9 @@ extends <a href="../../../../../com/google/openbidder/api/interceptor/UserRespon
 <li class="blockList">
 <h4>openRtb</h4>
 <pre>public final&nbsp;com.google.openrtb.OpenRtb.BidResponse.Builder&nbsp;openRtb()</pre>
-<dl><dt><span class="strong">Returns:</span></dt><dd>The delegate OpenRTB bid response builder.</dd></dl>
+<dl><dt><span class="strong">Returns:</span></dt><dd>The delegate OpenRTB bid response builder.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a></code> - if the response builder was already set to native mode.</dd></dl>
 </li>
 </ul>
 <a name="nativeResponse()">
@@ -380,7 +395,20 @@ extends <a href="../../../../../com/google/openbidder/api/interceptor/UserRespon
 <h4>nativeResponse</h4>
 <pre>public final&nbsp;&lt;T&gt;&nbsp;T&nbsp;nativeResponse()</pre>
 <dl><dt><span class="strong">Returns:</span></dt><dd>The delegate native response. The returned type depends on the exchange, but it
- will be a mutable form (for protoc-based response models, it should be a builder).</dd></dl>
+ will be a mutable form (for protoc-based response models, it should be a builder).</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a></code> - if the response builder was already set to OpenRTB mode.</dd></dl>
+</li>
+</ul>
+<a name="getResponseMode()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getResponseMode</h4>
+<pre>public final&nbsp;<a href="../../../../../com/google/openbidder/api/bidding/BidResponse.ResponseMode.html" title="enum in com.google.openbidder.api.bidding">BidResponse.ResponseMode</a>&nbsp;getResponseMode()</pre>
+<div class="block">Returns the <a href="../../../../../com/google/openbidder/api/bidding/BidResponse.ResponseMode.html" title="enum in com.google.openbidder.api.bidding"><code>BidResponse.ResponseMode</code></a>, which tells you which of <a href="../../../../../com/google/openbidder/api/bidding/BidResponse.html#openRtb()"><code>openRtb()</code></a> or
+ <a href="../../../../../com/google/openbidder/api/bidding/BidResponse.html#nativeResponse()"><code>nativeResponse()</code></a> can be invoked safely.</div>
 </li>
 </ul>
 <a name="seatBid(java.lang.String)">
@@ -571,7 +599,7 @@ public final&nbsp;com.google.openrtb.OpenRtb.BidResponse.SeatBid.Bid.Builder&nbs
 <ul class="blockList">
 <li class="blockList">
 <h4>filterBids</h4>
-<pre>public final&nbsp;boolean&nbsp;filterBids(com.google.common.base.Predicate&lt;com.google.openrtb.OpenRtb.BidResponse.SeatBid.Bid&gt;&nbsp;filter)</pre>
+<pre>public final&nbsp;boolean&nbsp;filterBids(com.google.common.base.Predicate&lt;com.google.openrtb.OpenRtb.BidResponse.SeatBid.Bid.Builder&gt;&nbsp;filter)</pre>
 <div class="block">Filters bids, from all seats.</div>
 <dl><dt><span class="strong">Parameters:</span></dt><dd><code>filter</code> - Predicate to filter which bids to keep; bids that don't pass the filter
  will be removed</dd>
@@ -586,7 +614,7 @@ public final&nbsp;com.google.openrtb.OpenRtb.BidResponse.SeatBid.Bid.Builder&nbs
 <h4>filterBids</h4>
 <pre>public final&nbsp;boolean&nbsp;filterBids(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
                  <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;seat,
-                 com.google.common.base.Predicate&lt;com.google.openrtb.OpenRtb.BidResponse.SeatBid.Bid&gt;&nbsp;filter)</pre>
+                 com.google.common.base.Predicate&lt;com.google.openrtb.OpenRtb.BidResponse.SeatBid.Bid.Builder&gt;&nbsp;filter)</pre>
 <div class="block">Filter bids from a given seat.</div>
 <dl><dt><span class="strong">Parameters:</span></dt><dd><code>seat</code> - Seat ID, or <code>null</code> to select the anonymous seat</dd><dd><code>filter</code> - Returns <code>true</code> to keep bid, <code>false</code> to remove</dd>
 <dt><span class="strong">Returns:</span></dt><dd><code>true</code> if any bid was removed</dd><dt><span class="strong">See Also:</span></dt><dd><code>for more general filtering support</code></dd></dl>
@@ -699,6 +727,6 @@ public final&nbsp;com.google.openrtb.OpenRtb.BidResponse.SeatBid.Bid.Builder&nbs
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2014 <a href="http://www.google.com">Google, Inc.</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2015 <a href="http://www.google.com">Google, Inc.</a>. All rights reserved.</small></p>
 </body>
 </html>

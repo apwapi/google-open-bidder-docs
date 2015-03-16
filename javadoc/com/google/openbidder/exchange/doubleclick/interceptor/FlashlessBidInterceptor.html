@@ -2,7 +2,7 @@
 <!-- NewPage -->
 <html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>FlashlessBidInterceptor (Google Open Bidder)</title>
 <link rel="stylesheet" type="text/css" href="../../../../../../stylesheet.css" title="Style">
 </head>
@@ -99,7 +99,8 @@
 </dl>
 <hr>
 <br>
-<pre>public class <span class="strong">FlashlessBidInterceptor</span>
+<pre>@Singleton
+public class <span class="strong">FlashlessBidInterceptor</span>
 extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
 implements <a href="../../../../../../com/google/openbidder/api/bidding/BidInterceptor.html" title="interface in com.google.openbidder.api.bidding">BidInterceptor</a></pre>
 <div class="block">Automatically handles <a href="https://support.google.com/adxbuyer/answer/3264211?hl=en">
@@ -126,7 +127,7 @@ implements <a href="../../../../../../com/google/openbidder/api/bidding/BidInter
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><strong><a href="../../../../../../com/google/openbidder/exchange/doubleclick/interceptor/FlashlessBidInterceptor.html#FlashlessBidInterceptor()">FlashlessBidInterceptor</a></strong>()</code>&nbsp;</td>
+<td class="colOne"><code><strong><a href="../../../../../../com/google/openbidder/exchange/doubleclick/interceptor/FlashlessBidInterceptor.html#FlashlessBidInterceptor(com.codahale.metrics.MetricRegistry)">FlashlessBidInterceptor</a></strong>(com.codahale.metrics.MetricRegistry&nbsp;metricRegistry)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -171,13 +172,14 @@ implements <a href="../../../../../../com/google/openbidder/api/bidding/BidInter
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="FlashlessBidInterceptor()">
+<a name="FlashlessBidInterceptor(com.codahale.metrics.MetricRegistry)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>FlashlessBidInterceptor</h4>
-<pre>public&nbsp;FlashlessBidInterceptor()</pre>
+<pre>@Inject
+public&nbsp;FlashlessBidInterceptor(com.codahale.metrics.MetricRegistry&nbsp;metricRegistry)</pre>
 </li>
 </ul>
 </li>
@@ -271,6 +273,6 @@ implements <a href="../../../../../../com/google/openbidder/api/bidding/BidInter
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2014 <a href="http://www.google.com">Google, Inc.</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2015 <a href="http://www.google.com">Google, Inc.</a>. All rights reserved.</small></p>
 </body>
 </html>

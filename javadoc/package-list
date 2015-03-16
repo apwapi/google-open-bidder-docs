@@ -32,6 +32,7 @@ com.google.openbidder.http.template
 com.google.openbidder.http.util
 com.google.openbidder.impression
 com.google.openbidder.impression.interceptor
+com.google.openbidder.json
 com.google.openbidder.match
 com.google.openbidder.match.interceptor
 com.google.openbidder.oauth
